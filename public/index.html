@@ -3,98 +3,110 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MyanDigitalPay - Premium Financial Portal</title>
+    <title>VIP2DSUCCESS99 - Portal</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
     <style>
         body { font-family: 'Plus Jakarta Sans', sans-serif; }
         .glass-card {
-            background: rgba(255, 255, 255, 0.85);
+            background: rgba(15, 23, 42, 0.85);
             backdrop-filter: blur(20px);
-            border: 1px solid rgba(255, 255, 255, 0.3);
+            border: 1px solid rgba(212, 175, 55, 0.3);
+        }
+        .gold-gradient-text {
+            background: linear-gradient(135deg, #BF953F, #FCF6BA, #B38728, #FBF5B7, #AA771C);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .gold-btn {
+            background: linear-gradient(135deg, #BF953F, #AA771C);
+            color: #fff;
+            transition: all 0.3s ease;
+        }
+        .gold-btn:hover {
+            background: linear-gradient(135deg, #DFB55F, #CA972C);
+            box-shadow: 0 0 20px rgba(191, 149, 63, 0.4);
         }
     </style>
 </head>
-<body class="bg-gradient-to-br from-indigo-900 via-slate-900 to-black text-slate-800 min-h-screen flex items-center justify-center p-4">
+<body class="bg-gradient-to-br from-slate-950 via-blue-950 to-slate-900 text-slate-100 min-h-screen flex items-center justify-center p-4">
 
-    <!-- Background Glow Effects -->
-    <div class="absolute top-1/4 left-1/4 w-72 h-72 bg-indigo-500/20 rounded-full blur-3xl pointer-events-none"></div>
-    <div class="absolute bottom-1/4 right-1/4 w-72 h-72 bg-rose-500/20 rounded-full blur-3xl pointer-events-none"></div>
+    <!-- Background Glow Effects (Gold & Navy) -->
+    <div class="absolute top-1/4 left-1/4 w-72 h-72 bg-amber-500/10 rounded-full blur-3xl pointer-events-none"></div>
+    <div class="absolute bottom-1/4 right-1/4 w-72 h-72 bg-blue-600/20 rounded-full blur-3xl pointer-events-none"></div>
 
-    <div class="w-full max-w-md p-8 glass-card rounded-3xl shadow-2xl relative z-10">
+    <div class="w-full max-w-md p-8 glass-card rounded-3xl shadow-2xl relative z-10 border border-amber-500/20">
         
-        <!-- Logo / Brand Header -->
+        <!-- Logo / Brand Header with 2D Logo -->
         <div class="text-center mb-8">
-            <div class="inline-flex p-3 bg-gradient-to-tr from-indigo-600 to-violet-500 rounded-2xl shadow-lg shadow-indigo-500/30 text-white mb-3">
-                <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                    <path stroke-linecap="round" stroke-linejoin="round5" stroke-width="2" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
-                </svg>
+            <div class="inline-flex items-center justify-center w-16 h-16 bg-gradient-to-tr from-amber-600 via-yellow-500 to-amber-700 rounded-2xl shadow-lg shadow-amber-600/30 text-slate-950 font-black text-2xl mb-3 border border-yellow-300/50">
+                2D
             </div>
-            <h1 class="text-2xl font-bold bg-gradient-to-r from-indigo-600 to-violet-600 bg-clip-text text-transparent">MyanDigitalPay</h1>
-            <p class="text-xs text-slate-500 mt-1">လုံခြုံစိတ်ချရသော ဒစ်ဂျစ်တယ် ငွေကြေးဝန်ဆောင်မှု</p>
+            <h1 class="text-2xl font-bold gold-gradient-text">VIP2DSUCCESS99</h1>
+            <p class="text-xs text-amber-200/70 mt-1 tracking-wide font-medium">တိကျသေချာ 2D ကမ္ဘာ</p>
         </div>
 
         <!-- Login / Sign up Section -->
         <div id="authSection">
-            <h2 id="formTitle" class="text-xl font-bold mb-6 text-slate-900 text-center">အကောင့်ဝင်ရန်</h2>
+            <h2 id="formTitle" class="text-xl font-bold mb-6 text-slate-100 text-center">အကောင့်ဝင်ရန်</h2>
             <form id="authForm" onsubmit="handleAuth(event)" class="space-y-4">
                 <div>
-                    <label class="block text-xs font-semibold uppercase tracking-wider text-slate-500 mb-1.5">Username</label>
-                    <input type="text" id="username" required placeholder="သင့်အကောင့်အမည်ထည့်ပါ" class="w-full px-4 py-3 bg-slate-50/50 border border-slate-200 rounded-2xl focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:bg-white transition text-sm">
+                    <label class="block text-xs font-semibold uppercase tracking-wider text-amber-200/70 mb-1.5">Username</label>
+                    <input type="text" id="username" required placeholder="သင့်အကောင့်အမည်ထည့်ပါ" class="w-full px-4 py-3 bg-slate-900/80 border border-amber-500/30 rounded-2xl focus:outline-none focus:ring-2 focus:ring-amber-500 focus:bg-slate-900 text-slate-100 transition text-sm">
                 </div>
                 <div>
-                    <label class="block text-xs font-semibold uppercase tracking-wider text-slate-500 mb-1.5">Password</label>
-                    <input type="password" id="password" required placeholder="••••••••" class="w-full px-4 py-3 bg-slate-50/50 border border-slate-200 rounded-2xl focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:bg-white transition text-sm">
+                    <label class="block text-xs font-semibold uppercase tracking-wider text-amber-200/70 mb-1.5">Password</label>
+                    <input type="password" id="password" required placeholder="••••••••" class="w-full px-4 py-3 bg-slate-900/80 border border-amber-500/30 rounded-2xl focus:outline-none focus:ring-2 focus:ring-amber-500 focus:bg-slate-900 text-slate-100 transition text-sm">
                 </div>
-                <button type="submit" id="submitBtn" class="w-full py-3.5 bg-gradient-to-r from-indigo-600 to-violet-600 text-white rounded-2xl font-semibold shadow-lg shadow-indigo-600/30 hover:shadow-indigo-600/50 hover:scale-[1.02] active:scale-[0.98] transition duration-200 text-sm">Login ဝင်မည်</button>
+                <button type="submit" id="submitBtn" class="w-full py-3.5 gold-btn rounded-2xl font-semibold shadow-lg hover:scale-[1.02] active:scale-[0.98] transition duration-200 text-sm">Login ဝင်မည်</button>
             </form>
-            <p id="authError" class="text-rose-500 text-xs mt-3 text-center hidden font-medium"></p>
+            <p id="authError" class="text-rose-400 text-xs mt-3 text-center hidden font-medium"></p>
             
-            <div class="mt-6 text-center text-sm text-slate-500">
+            <div class="mt-6 text-center text-sm text-slate-400">
                 <span id="switchText">အကောင့်မရှိသေးပါဘူးလား?</span>
-                <button type="button" onclick="toggleMode()" id="switchBtn" class="text-indigo-600 font-semibold hover:underline ml-1">အကောင့်အသစ်ဖွင့်ရန်</button>
+                <button type="button" onclick="toggleMode()" id="switchBtn" class="text-amber-400 font-semibold hover:underline ml-1">အကောင့်အသစ်ဖွင့်ရန်</button>
             </div>
         </div>
 
         <!-- User Dashboard & Digital Pay Information Box (အကောင့်ဝင်ပြီးမှပေါ်မည်) -->
         <div id="dashboardSection" class="hidden">
-            <div class="flex justify-between items-center mb-6 pb-4 border-b border-slate-100">
+            <div class="flex justify-between items-center mb-6 pb-4 border-b border-amber-500/20">
                 <div>
-                    <h2 class="text-lg font-bold text-slate-900">ပန်နယ်လ်</h2>
-                    <p class="text-xs text-emerald-600 font-medium flex items-center gap-1 mt-0.5">
-                        <span class="w-2 h-2 rounded-full bg-emerald-500 animate-pulse"></span> အကောင့်ဝင်ထားပါသည်
+                    <h2 class="text-lg font-bold text-slate-100">ပန်နယ်လ်</h2>
+                    <p class="text-xs text-emerald-400 font-medium flex items-center gap-1 mt-0.5">
+                        <span class="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span> အကောင့်ဝင်ထားပါသည်
                     </p>
                 </div>
-                <button onclick="handleLogout()" class="px-3 py-1.5 text-xs font-semibold text-rose-600 bg-rose-50 hover:bg-rose-100 rounded-xl transition">ထွက်မည် (Logout)</button>
+                <button onclick="handleLogout()" class="px-3 py-1.5 text-xs font-semibold text-rose-400 bg-rose-950/50 hover:bg-rose-900/60 border border-rose-500/30 rounded-xl transition">ထွက်မည် (Logout)</button>
             </div>
 
             <!-- Digital Pay Information Box -->
-            <div class="p-5 bg-gradient-to-br from-indigo-50/50 to-violet-50/50 rounded-2xl border border-indigo-100/60 mb-6 shadow-inner">
-                <h3 class="text-sm font-bold text-indigo-900 mb-1 flex items-center gap-2">
-                    <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 text-indigo-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <div class="p-5 bg-gradient-to-br from-slate-900/90 to-blue-950/90 rounded-2xl border border-amber-500/30 mb-6 shadow-inner">
+                <h3 class="text-sm font-bold text-amber-300 mb-1 flex items-center gap-2">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 text-amber-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
                     </svg>
                     Digital Pay Information
                 </h3>
-                <p class="text-[11px] text-slate-500 mb-4">လက်ရှိ သတ်မှတ်ထားသော အချက်အလက်များ</p>
+                <p class="text-[11px] text-slate-400 mb-4">လက်ရှိ သတ်မှတ်ထားသော အချက်အလက်များ</p>
                 
                 <div class="space-y-3 text-left">
-                    <div class="p-3.5 bg-white/80 rounded-xl border border-slate-100 shadow-sm">
-                        <span class="block text-[11px] font-medium text-slate-400 uppercase tracking-wide">Deposit နှုန်းထား</span>
-                        <span id="viewDeposit" class="text-base font-bold text-slate-800 mt-0.5 block">-</span>
+                    <div class="p-3.5 bg-slate-950/60 rounded-xl border border-amber-500/20 shadow-sm">
+                        <span class="block text-[11px] font-medium text-amber-200/60 uppercase tracking-wide">Deposit နှုန်းထား</span>
+                        <span id="viewDeposit" class="text-base font-bold text-slate-100 mt-0.5 block">-</span>
                     </div>
-                    <div class="p-3.5 bg-white/80 rounded-xl border border-slate-100 shadow-sm">
-                        <span class="block text-[11px] font-medium text-slate-400 uppercase tracking-wide">ဂဏန်းအချက်အလက်</span>
-                        <span id="viewNumber" class="text-base font-bold text-indigo-600 mt-0.5 block">-</span>
+                    <div class="p-3.5 bg-slate-950/60 rounded-xl border border-amber-500/20 shadow-sm">
+                        <span class="block text-[11px] font-medium text-amber-200/60 uppercase tracking-wide">ဂဏန်းအချက်အလက်</span>
+                        <span id="viewNumber" class="text-base font-bold text-amber-400 mt-0.5 block">-</span>
                     </div>
                     <div class="text-[11px] text-slate-400 text-right font-medium">
-                        နောက်ဆုံးပြင်ဆင်ချိန်: <span id="viewTime" class="text-slate-600">-</span>
+                        နောက်ဆုံးပြင်ဆင်ချိန်: <span id="viewTime" class="text-amber-200/80">-</span>
                     </div>
                 </div>
             </div>
 
-            <div class="pt-2 text-center text-xs text-slate-500">
-                အကူအညီအတွက် ဆက်သွယ်ရန်: <a href="https://t.me/myandigitalpay" target="_blank" class="text-indigo-600 font-semibold hover:underline">t.me/myandigitalpay</a>
+            <div class="pt-2 text-center text-xs text-slate-400">
+                အကူအညီအတွက် ဆက်သွယ်ရန်: <a href="https://t.me/myandigitalpay" target="_blank" class="text-amber-400 font-semibold hover:underline">t.me/myandigitalpay</a>
             </div>
         </div>
 
@@ -125,7 +137,6 @@
 
         async function handleAuth(e) {
             e.preventDefault();
-            // အကောင့်ဝင်ရောက်မှု အောင်မြင်ပါက Dashboard ကို ပြသမည်
             document.getElementById('authSection').classList.add('hidden');
             document.getElementById('dashboardSection').classList.remove('hidden');
             fetchPublicData();
